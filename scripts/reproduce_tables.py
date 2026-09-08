@@ -40,11 +40,22 @@ def reproduce_friedman9(results_dir: str):
     if not os.path.exists(path):
         print(f"\n(skipping Table 8 -- {path} not found)")
         return
-    df = pd.read_csv(path).drop(columns=["code", "horizon"], errors="ignore")
+    raw = pd.read_csv(path)
+    df = raw.drop(columns=["code", "horizon"], errors="ignore")
     chi2, dof, p, mean_ranks = friedman_test(df)
-    print("\n=== Table 8: nine-condition Friedman ranking ===")
+    print("\n=== Table 8: task-level (n=40) nine-condition Friedman ranking ===")
     print(f"chi2={chi2:.2f}  df={dof}  p={p:.3g}")
     print(mean_ranks.round(3).to_string())
+
+    # Meter-level confirmation (n=10): collapse the 4 horizons per meter to one mean value
+    # per condition first, so blocks are independent meters rather than correlated
+    # meter x horizon tasks. Same collapsing used for the meter-level Wilcoxon test.
+    cond_cols = [c for c in raw.columns if c not in ("code", "horizon")]
+    meter_level = raw.groupby("code")[cond_cols].mean()
+    chi2_m, dof_m, p_m, mean_ranks_m = friedman_test(meter_level)
+    print("\n=== Meter-level (n=10) confirmation ===")
+    print(f"chi2={chi2_m:.2f}  df={dof_m}  p={p_m:.3g}")
+    print(mean_ranks_m.round(3).to_string())
 
 
 def main():

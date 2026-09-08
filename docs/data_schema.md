@@ -37,7 +37,9 @@ expects these files at `<weather-dir>/<CODE>.csv`.
 
 ## Meter naming convention
 
-Meter codes are treated as opaque identifiers (e.g. `M01`, `DEMO0001`). This repository does
-not publish any mapping from code to a real-world substation name or location, consistent with
-EVN's data-access restrictions on identifiable operational infrastructure (see the top-level
-README's "What is and is not included" section).
+Meter codes are treated as opaque identifiers. The `results/` CSVs in this repository use
+anonymized labels (`M01`-`M26`) rather than the original EVN meter codes; `demo_data/` uses its
+own synthetic codes (e.g. `DEMO0001`). This repository does not publish any mapping from these
+labels to a real-world meter code, substation name, or location, consistent with EVN's
+data-access restrictions on identifiable operational infrastructure (see the top-level README's
+"What is and is not included" section).

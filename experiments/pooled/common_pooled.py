@@ -42,8 +42,9 @@ NUM_THREADS = 8
 
 def discover_meters(data_dir: str) -> dict:
     """Map meter code -> CSV path for every `<CODE>.csv` file in `data_dir`. The paper's 10-meter
-    benchmark used codes such as M01; the bundled demo_data/ ships a handful of synthetic
-    meters with the same naming convention so these scripts run unmodified on either."""
+    benchmark used anonymized codes such as M01 (see results/ and docs/data_schema.md); the
+    bundled demo_data/ ships a handful of synthetic meters with the same naming convention so
+    these scripts run unmodified on either."""
     paths = sorted(glob.glob(os.path.join(data_dir, "*.csv")))
     return {os.path.splitext(os.path.basename(p))[0]: p for p in paths}
 
