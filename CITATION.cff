@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the accompanying paper."
+title: "AR-MambaKAN-SCADA: Pooled vs. Local Training for Joint Active-Reactive Power Forecasting on Distribution SCADA"
+type: software
+authors:
+  - family-names: "Nguyen"
+    given-names: "Thi-Thanh-Tan"
+    orcid: "https://orcid.org/0000-0001-7214-5899"
+    affiliation: "Faculty of Computing and Digital Energy Technology, Electric Power University, Hanoi, Vietnam"
+    email: "tanntt@epu.edu.vn"
+repository-code: "https://github.com/TANNTT/AR-MambaKAN-SCADA"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Pooled Multi-Substation Training Outperforms Per-Meter Local Training for Joint Active-Reactive Power Forecasting on Real Distribution Supervisory Control and Data Acquisition Telemetry"
+  authors:
+    - family-names: "Nguyen"
+      given-names: "Thi-Thanh-Tan"
+      orcid: "https://orcid.org/0000-0001-7214-5899"
+  journal: "Sustainable Energy, Grids and Networks"
+  year: 2026
+  # Update volume/pages/DOI once the manuscript is accepted and published.

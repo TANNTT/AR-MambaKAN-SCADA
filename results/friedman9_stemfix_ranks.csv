@@ -1,0 +1,10 @@
+,0
+Pooled AR-MambaKAN,2.725
+Pooled BiLSTM,3.05
+Pooled LSTM,3.6
+Pooled MLP,4.25
+Local BiLSTM,4.825
+Local LSTM,5.15
+Local AR-MambaKAN,5.575
+Naive,7.7
+Local MLP,8.125
