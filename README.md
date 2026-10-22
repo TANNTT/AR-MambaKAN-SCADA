@@ -2,9 +2,9 @@
 
 Reproducibility package for:
 
-> Thi-Thanh-Tan Nguyen. **Pooled Multi-Substation Training Outperforms Per-Meter Local Training for
-> Joint Active-Reactive Power Forecasting on Real Distribution Supervisory Control and Data
-> Acquisition Telemetry.** Submitted to *Sustainable Energy, Grids and Networks*.
+> Thi-Thanh-Tan Nguyen, Thi-Thu-Nga Vu. **Pooled Multi-Substation Training Outperforms Per-Meter Local
+> Training for Joint Active-Reactive Power Forecasting on Real Distribution Supervisory Control and
+> Data Acquisition Telemetry.** Manuscript under review.
 
 This repository contains the full model implementation, preprocessing/feature pipeline,
 experiment scripts, statistical-analysis code, and non-confidential aggregated result files needed

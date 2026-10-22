@@ -6,8 +6,13 @@ authors:
   - family-names: "Nguyen"
     given-names: "Thi-Thanh-Tan"
     orcid: "https://orcid.org/0000-0001-7214-5899"
-    affiliation: "Faculty of Computing and Digital Energy Technology, Electric Power University, Hanoi, Vietnam"
+    affiliation: "Department of Edge Computing and Digital Energy Technology, Electric Power University, Hanoi, Vietnam"
     email: "tanntt@epu.edu.vn"
+  - family-names: "Vu"
+    given-names: "Thi-Thu-Nga"
+    orcid: "https://orcid.org/0000-0002-8874-2054"
+    affiliation: "Electrical Engineering Department, Electric Power University, Hanoi, Vietnam"
+    email: "ngavtt@epu.edu.vn"
 repository-code: "https://github.com/TANNTT/AR-MambaKAN-SCADA"
 license: MIT
 preferred-citation:
@@ -17,6 +22,8 @@ preferred-citation:
     - family-names: "Nguyen"
       given-names: "Thi-Thanh-Tan"
       orcid: "https://orcid.org/0000-0001-7214-5899"
-  journal: "Sustainable Energy, Grids and Networks"
+    - family-names: "Vu"
+      given-names: "Thi-Thu-Nga"
+      orcid: "https://orcid.org/0000-0002-8874-2054"
   year: 2026
   # Update volume/pages/DOI once the manuscript is accepted and published.
