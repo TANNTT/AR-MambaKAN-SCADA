@@ -1,0 +1,32 @@
+map_column=real_code
+n_real_codes=33
+scan_root=/home/serverai/research/SCADA/papers/S1-IET-GTD-R1/repo-v1.3-sach
+
+=== (a) binary suffixes ===
+count=0
+
+=== (b) files > 1 MB ===
+count=1
+  revision_r1/results/r1-r2-cpu/summary.json	2909200
+
+=== (c) internal path needles ===
+/media/: count=0
+/data/: count=0
+/home/serverai/: count=0
+Data18TB: count=0
+scada-project-code: count=0
+dataoke: count=0
+
+=== (d) real-code occurrences (file -> n_hits; codes not printed) ===
+files_with_hits=0
+total_hits=0
+
+=== (e) CSV/JSON with timestamp + raw P/Q series ===
+count=4
+  demo_data/DEMO0003.csv
+  demo_data/DEMO0002.csv
+  demo_data/DEMO0001.csv
+  demo_data/DEMO0004.csv
+
+=== (f) results JSON/CSV keys with signal-level names ===
+count=0

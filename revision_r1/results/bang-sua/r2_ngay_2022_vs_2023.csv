@@ -1,0 +1,61 @@
+kind,label_2022,date_2022,source_2022,label_2023,date_2023,channel,config,config_label,dmape_2022,dmape_2023,n_meters_2022,n_meters_2023,meters_missing_2022,meters_missing_2023,raw_dmape_2022,raw_dmape_2023
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,P,daily_naive,daily-naive,4.26,5.39,8,10,"M06,M09",,4.2622801364678455,5.388466180790648
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,P,pooled_bilstm,pooled BiLSTM,7.96,9.29,8,10,"M06,M09",,7.956989729982558,9.287651435691192
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,P,pooled_armambakan,pooled AR-MambaKAN,8.01,8.99,8,10,"M06,M09",,8.013043476780197,8.985707842618558
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,P,local_bilstm,local BiLSTM,9.94,8.76,8,10,"M06,M09",,9.938367841248194,8.759885366438585
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,P,local_armambakan,local AR-MambaKAN,8.57,9.0,8,10,"M06,M09",,8.57255825700107,9.002295697077955
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,Q,daily_naive,daily-naive,7.69,6.85,8,10,"M06,M09",,7.687273084693814,6.846938365803775
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,Q,pooled_bilstm,pooled BiLSTM,8.77,8.26,8,10,"M06,M09",,8.768233291263813,8.261699300379064
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,Q,pooled_armambakan,pooled AR-MambaKAN,8.32,8.64,8,10,"M06,M09",,8.316195047697938,8.639166867740695
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,Q,local_bilstm,local BiLSTM,13.27,12.07,8,10,"M06,M09",,13.267889242269014,12.066408496580696
+calendar_2022_vs_2023,2022-01,2022-01-12,g4_F2,2023-01,2023-01-11,Q,local_armambakan,local AR-MambaKAN,12.86,11.96,8,10,"M06,M09",,12.86438423719513,11.95704378072291
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,P,daily_naive,daily-naive,9.87,8.28,10,7,,"M06,M09,M10",9.873505990135513,8.277877557618465
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,P,pooled_bilstm,pooled BiLSTM,11.16,6.87,10,7,,"M06,M09,M10",11.155322007447628,6.867662323106372
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,P,pooled_armambakan,pooled AR-MambaKAN,11.95,7.92,10,7,,"M06,M09,M10",11.94751253335124,7.921980775311248
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,P,local_bilstm,local BiLSTM,11.7,8.46,10,7,,"M06,M09,M10",11.699572328575819,8.455049878765713
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,P,local_armambakan,local AR-MambaKAN,12.06,9.56,10,7,,"M06,M09,M10",12.059397918710609,9.558456278384963
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,Q,daily_naive,daily-naive,29.14,6.14,10,7,,"M06,M09,M10",29.14132634006338,6.135529843725307
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,Q,pooled_bilstm,pooled BiLSTM,29.4,5.44,10,7,,"M06,M09,M10",29.402055401007964,5.440230576778814
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,Q,pooled_armambakan,pooled AR-MambaKAN,29.86,6.18,10,7,,"M06,M09,M10",29.86272650844263,6.178588968761124
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,Q,local_bilstm,local BiLSTM,35.05,11.56,10,7,,"M06,M09,M10",35.04589068695355,11.556375849598899
+calendar_2022_vs_2023,2022-04,2022-04-13,g4_F2,2023-04,2023-04-12,Q,local_armambakan,local AR-MambaKAN,37.61,13.01,10,7,,"M06,M09,M10",37.607440388133874,13.00824308802511
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,P,daily_naive,daily-naive,7.66,,10,0,,no_2023_counterpart_in_main_test,7.659900813138177,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,P,pooled_bilstm,pooled BiLSTM,10.1,,10,0,,no_2023_counterpart_in_main_test,10.096824168453505,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,P,pooled_armambakan,pooled AR-MambaKAN,9.93,,10,0,,no_2023_counterpart_in_main_test,9.931245226253672,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,P,local_bilstm,local BiLSTM,12.32,,10,0,,no_2023_counterpart_in_main_test,12.318189573407235,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,P,local_armambakan,local AR-MambaKAN,13.46,,10,0,,no_2023_counterpart_in_main_test,13.462365126879822,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,Q,daily_naive,daily-naive,31.66,,10,0,,no_2023_counterpart_in_main_test,31.65907048099971,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,Q,pooled_bilstm,pooled BiLSTM,34.52,,10,0,,no_2023_counterpart_in_main_test,34.52497673085564,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,Q,pooled_armambakan,pooled AR-MambaKAN,35.5,,10,0,,no_2023_counterpart_in_main_test,35.495919780086744,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,Q,local_bilstm,local BiLSTM,49.03,,10,0,,no_2023_counterpart_in_main_test,49.03425937811879,
+calendar_2022_vs_2023,2022-05,2022-05-11,g4_F3,,,Q,local_armambakan,local AR-MambaKAN,45.9,,10,0,,no_2023_counterpart_in_main_test,45.89753732892522,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,P,daily_naive,daily-naive,15.15,,10,0,,no_2023_counterpart_in_main_test,15.148092559086072,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,P,pooled_bilstm,pooled BiLSTM,14.9,,10,0,,no_2023_counterpart_in_main_test,14.903666555961653,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,P,pooled_armambakan,pooled AR-MambaKAN,13.32,,10,0,,no_2023_counterpart_in_main_test,13.324181596834922,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,P,local_bilstm,local BiLSTM,15.48,,10,0,,no_2023_counterpart_in_main_test,15.484673484578119,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,P,local_armambakan,local AR-MambaKAN,17.52,,10,0,,no_2023_counterpart_in_main_test,17.518651115175697,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,Q,daily_naive,daily-naive,51.67,,10,0,,no_2023_counterpart_in_main_test,51.67070726326627,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,Q,pooled_bilstm,pooled BiLSTM,45.33,,10,0,,no_2023_counterpart_in_main_test,45.33037459856055,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,Q,pooled_armambakan,pooled AR-MambaKAN,38.5,,10,0,,no_2023_counterpart_in_main_test,38.50390220631791,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,Q,local_bilstm,local BiLSTM,58.32,,10,0,,no_2023_counterpart_in_main_test,58.316621388942096,
+calendar_2022_vs_2023,2022-06,2022-06-08,g4_F3,,,Q,local_armambakan,local AR-MambaKAN,55.61,,10,0,,no_2023_counterpart_in_main_test,55.607583126057214,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,P,daily_naive,daily-naive,6.13,,10,0,,no_2023_counterpart_in_main_test,6.134057306934458,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,P,pooled_bilstm,pooled BiLSTM,9.46,,10,0,,no_2023_counterpart_in_main_test,9.457399697020406,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,P,pooled_armambakan,pooled AR-MambaKAN,8.53,,10,0,,no_2023_counterpart_in_main_test,8.52515757302061,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,P,local_bilstm,local BiLSTM,13.9,,10,0,,no_2023_counterpart_in_main_test,13.89935210548036,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,P,local_armambakan,local AR-MambaKAN,15.04,,10,0,,no_2023_counterpart_in_main_test,15.0413849569908,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,Q,daily_naive,daily-naive,27.77,,10,0,,no_2023_counterpart_in_main_test,27.767751874856447,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,Q,pooled_bilstm,pooled BiLSTM,34.97,,10,0,,no_2023_counterpart_in_main_test,34.965920128902646,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,Q,pooled_armambakan,pooled AR-MambaKAN,30.21,,10,0,,no_2023_counterpart_in_main_test,30.208933915551036,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,Q,local_bilstm,local BiLSTM,40.37,,10,0,,no_2023_counterpart_in_main_test,40.37274398958116,
+calendar_2022_vs_2023,2022-07,2022-07-13,g4_F3,,,Q,local_armambakan,local AR-MambaKAN,41.82,,10,0,,no_2023_counterpart_in_main_test,41.81555912715169,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,P,daily_naive,daily-naive,15.21,,10,0,,no_2023_counterpart_in_main_test,15.210165617852653,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,P,pooled_bilstm,pooled BiLSTM,11.18,,10,0,,no_2023_counterpart_in_main_test,11.180995279255619,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,P,pooled_armambakan,pooled AR-MambaKAN,11.43,,10,0,,no_2023_counterpart_in_main_test,11.430329145635728,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,P,local_bilstm,local BiLSTM,15.68,,10,0,,no_2023_counterpart_in_main_test,15.680312114713919,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,P,local_armambakan,local AR-MambaKAN,18.94,,10,0,,no_2023_counterpart_in_main_test,18.938927597223348,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,Q,daily_naive,daily-naive,45.85,,10,0,,no_2023_counterpart_in_main_test,45.8489053254216,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,Q,pooled_bilstm,pooled BiLSTM,38.1,,10,0,,no_2023_counterpart_in_main_test,38.10291819357758,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,Q,pooled_armambakan,pooled AR-MambaKAN,37.0,,10,0,,no_2023_counterpart_in_main_test,36.996201564378126,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,Q,local_bilstm,local BiLSTM,48.09,,10,0,,no_2023_counterpart_in_main_test,48.09309166769939,
+calendar_2022_vs_2023,2022-08,2022-08-10,g4_F3,,,Q,local_armambakan,local AR-MambaKAN,49.56,,10,0,,no_2023_counterpart_in_main_test,49.56262648829795,

@@ -1,0 +1,41 @@
+season,season_en,channel,config,config_label,wmape_mean,wmape_median,n_meter_weeks,n_unique_iso_weeks,raw_wmape_mean,raw_wmape_median
+dong,winter,P,daily_naive,daily-naive,11.73,8.74,127,13,11.725907344562057,8.74081570272179
+dong,winter,P,pooled_bilstm,pooled BiLSTM,25.47,9.62,127,13,25.469688425868327,9.616871668325427
+dong,winter,P,pooled_armambakan,pooled AR-MambaKAN,25.73,9.06,127,13,25.73050667113194,9.064632033915347
+dong,winter,P,local_bilstm,local BiLSTM,17.02,10.82,127,13,17.022699920489337,10.815304433984933
+dong,winter,P,local_armambakan,local AR-MambaKAN,20.2,11.27,127,13,20.20192302007511,11.274761909694341
+dong,winter,Q,daily_naive,daily-naive,14.64,10.74,127,13,14.643399115618392,10.735035732378122
+dong,winter,Q,pooled_bilstm,pooled BiLSTM,13.8,10.58,127,13,13.799648366717783,10.578047298384085
+dong,winter,Q,pooled_armambakan,pooled AR-MambaKAN,14.36,11.04,127,13,14.363447684056668,11.036862488426861
+dong,winter,Q,local_bilstm,local BiLSTM,25.38,11.92,127,13,25.384426572722262,11.918493219325264
+dong,winter,Q,local_armambakan,local AR-MambaKAN,26.39,11.5,127,13,26.3886396310678,11.499425548626443
+xuan,spring,P,daily_naive,daily-naive,12.75,8.53,68,8,12.748406782063956,8.526924090616715
+xuan,spring,P,pooled_bilstm,pooled BiLSTM,13.76,8.57,68,8,13.757877885041069,8.567445464983802
+xuan,spring,P,pooled_armambakan,pooled AR-MambaKAN,14.22,8.13,68,8,14.22204782905355,8.125084768397397
+xuan,spring,P,local_bilstm,local BiLSTM,12.82,10.41,68,8,12.817700008109878,10.410005570410132
+xuan,spring,P,local_armambakan,local AR-MambaKAN,13.3,9.79,68,8,13.29845509549206,9.786058596058353
+xuan,spring,Q,daily_naive,daily-naive,11.55,7.41,68,8,11.552821906561626,7.40641856782284
+xuan,spring,Q,pooled_bilstm,pooled BiLSTM,9.7,7.62,68,8,9.69847294450307,7.621403397109063
+xuan,spring,Q,pooled_armambakan,pooled AR-MambaKAN,10.08,8.07,68,8,10.077592139916838,8.07104429678245
+xuan,spring,Q,local_bilstm,local BiLSTM,14.79,9.3,68,8,14.789841430180722,9.300727994755928
+xuan,spring,Q,local_armambakan,local AR-MambaKAN,15.21,10.16,68,8,15.208044913249687,10.162110223460672
+he,summer,P,daily_naive,daily-naive,19.39,14.98,31,9,19.392013518535318,14.978808438166041
+he,summer,P,pooled_bilstm,pooled BiLSTM,21.84,12.01,31,9,21.84197242732572,12.005139278936136
+he,summer,P,pooled_armambakan,pooled AR-MambaKAN,23.5,13.24,31,9,23.495898123983785,13.242779699773493
+he,summer,P,local_bilstm,local BiLSTM,20.81,14.55,31,9,20.806112414994203,14.55177430431933
+he,summer,P,local_armambakan,local AR-MambaKAN,20.8,14.72,31,9,20.80233570551445,14.721385621501796
+he,summer,Q,daily_naive,daily-naive,31.47,19.59,31,9,31.471776585043457,19.59018346629275
+he,summer,Q,pooled_bilstm,pooled BiLSTM,24.07,17.01,31,9,24.065603814854164,17.009105045281416
+he,summer,Q,pooled_armambakan,pooled AR-MambaKAN,24.7,17.76,31,9,24.697252429843626,17.761929343028378
+he,summer,Q,local_bilstm,local BiLSTM,30.94,26.05,31,9,30.94313186063104,26.051925312978153
+he,summer,Q,local_armambakan,local AR-MambaKAN,30.31,26.64,31,9,30.305190137207724,26.639911736740128
+thu,autumn,P,daily_naive,daily-naive,11.17,8.72,111,13,11.17137761563505,8.720549120979527
+thu,autumn,P,pooled_bilstm,pooled BiLSTM,10.6,9.33,111,13,10.601843379794978,9.328328554717652
+thu,autumn,P,pooled_armambakan,pooled AR-MambaKAN,9.89,8.38,111,13,9.891540594920091,8.384951000354908
+thu,autumn,P,local_bilstm,local BiLSTM,11.13,9.99,111,13,11.129060793407715,9.99462553611316
+thu,autumn,P,local_armambakan,local AR-MambaKAN,11.48,10.28,111,13,11.481148034011262,10.281911006303094
+thu,autumn,Q,daily_naive,daily-naive,23.15,15.83,111,13,23.147731020268278,15.831419673357344
+thu,autumn,Q,pooled_bilstm,pooled BiLSTM,20.61,15.43,111,13,20.609431023949,15.432269023318012
+thu,autumn,Q,pooled_armambakan,pooled AR-MambaKAN,20.18,14.29,111,13,20.179999228185547,14.291945245325092
+thu,autumn,Q,local_bilstm,local BiLSTM,24.78,17.61,111,13,24.777364043357107,17.613085310300264
+thu,autumn,Q,local_armambakan,local AR-MambaKAN,24.85,17.71,111,13,24.845573294961916,17.71412598825185
