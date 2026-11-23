@@ -7,7 +7,7 @@ count=0
 
 === (b) files > 1 MB ===
 count=1
-  revision_r1/results/r1-r2-cpu/summary.json	2686675
+  revision_r1/results/r1-r2-cpu/summary.json	1450707
 
 === (c) internal path needles ===
 (all needles from quet_repo PATH_NEEDLES): each count=0
@@ -29,4 +29,5 @@ count=0
 
 Q6 (2026-11-23): per-meter nMAE keys/rows removed from r1-r2-cpu public results.
 Q7 (2026-11-23): MASE keys/rows and R1.5 per-meter / rank_order removed from r1-r2-cpu public results.
-Scan re-run after Q7 strip; (a)-(f) match prior pass criteria.
+Q7 lan 2 (2026-11-23): R1.1/R2/R1.5 readout=full removed (paper reports final-step for those analyses; Table 18 / g2b full kept).
+Scan re-run after Q7 lan 2; (a)-(f) match prior pass criteria.
