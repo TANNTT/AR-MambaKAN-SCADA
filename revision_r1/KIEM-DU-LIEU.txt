@@ -1,21 +1,17 @@
 map_column=real_code
 n_real_codes=33
-scan_root=/home/serverai/research/SCADA/papers/S1-IET-GTD-R1/repo-v1.3-sach
+scan_root=repo-v1.3-sach (local clone; absolute path redacted)
 
 === (a) binary suffixes ===
 count=0
 
 === (b) files > 1 MB ===
 count=1
-  revision_r1/results/r1-r2-cpu/summary.json	2909200
+  revision_r1/results/r1-r2-cpu/summary.json	2823820
 
 === (c) internal path needles ===
-/media/: count=0
-/data/: count=0
-/home/serverai/: count=0
-Data18TB: count=0
-scada-project-code: count=0
-dataoke: count=0
+(all needles from quet_repo PATH_NEEDLES): each count=0
+(note: this checklist file itself avoids literal needle strings so re-scan stays clean)
 
 === (d) real-code occurrences (file -> n_hits; codes not printed) ===
 files_with_hits=0
@@ -30,3 +26,6 @@ count=4
 
 === (f) results JSON/CSV keys with signal-level names ===
 count=0
+
+Q6 (2026-11-23): per-meter nMAE keys/rows removed from r1-r2-cpu public results.
+Scan re-run after nMAE strip; (a)-(f) match prior pass criteria.
