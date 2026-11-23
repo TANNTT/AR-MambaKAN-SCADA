@@ -7,7 +7,7 @@ count=0
 
 === (b) files > 1 MB ===
 count=1
-  revision_r1/results/r1-r2-cpu/summary.json	1450707
+  revision_r1/results/r1-r2-cpu/summary.json	1465491
 
 === (c) internal path needles ===
 (all needles from quet_repo PATH_NEEDLES): each count=0
@@ -31,3 +31,6 @@ Q6 (2026-11-23): per-meter nMAE keys/rows removed from r1-r2-cpu public results.
 Q7 (2026-11-23): MASE keys/rows and R1.5 per-meter / rank_order removed from r1-r2-cpu public results.
 Q7 lan 2 (2026-11-23): R1.1/R2/R1.5 readout=full removed (paper reports final-step for those analyses; Table 18 / g2b full kept).
 Scan re-run after Q7 lan 2; (a)-(f) match prior pass criteria.
+
+Q9 PA-B (2026-11-23): restored R1.1 readout=full MEANS only (r1_1_gchung_means.csv full rows; r1_1_gchung summary cells without per_meter). Not restored: R1.1 full per-meter, R2 full, R1.5 full. Paper v10 Section 7.2.6 cites full-window daily-naive ordering.
+Scan re-run after Q9 PA-B; (a)-(f) pass (no SCADA raw / no MASE/nMAE in results).
