@@ -116,7 +116,7 @@ def subsample_train_datasets(
 
 
 def assert_plan_windows(plan: BudgetPlan) -> None:
-    """Hard checks required by the Cursor brief."""
+    """Hard checks required by the revision plan."""
     if plan.mode == "target_frac":
         if plan.total != plan.n_local_target:
             raise AssertionError(f"total {plan.total} != n_local {plan.n_local_target}")

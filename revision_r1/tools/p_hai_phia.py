@@ -1,7 +1,7 @@
-"""PA-B: liet ke kiem dinh ban nop (mot/hai phia) va tinh lai p hai phia.
+"""List the tests in the submitted version (one-/two-sided) and recompute two-sided p.
 
-Chi doc ma goc AR-MambaKAN-SCADA, CSV results/, va summary da co.
-Ghi results/p-hai-phia/summary.json. CPU. Khong GPU.
+Reads only the original AR-MambaKAN-SCADA code, results/ CSVs, and existing summaries.
+Writes results/p-hai-phia/summary.json. CPU. No GPU.
 """
 from __future__ import annotations
 
@@ -108,8 +108,8 @@ def flip_row(
 
 
 def catalog_ban_nop_tests() -> list[dict]:
-    """Liet ke kiem dinh Table 3-14, 17-20 theo ma goc (chi doc)."""
-    # Hai implement Wilcoxon trong ma goc deu hai phia.
+    """List the tests behind Tables 3-14 and 17-20 by original code (read-only)."""
+    # Both Wilcoxon implementations in the original code are two-sided.
     two_sided_src = [
         {
             "file": f"{SRC}/scripts/statistical_tests.py",
@@ -312,7 +312,7 @@ def catalog_ban_nop_tests() -> list[dict]:
 
 
 def recompute_from_csv_two_sided() -> dict:
-    """Tinh lai p hai phia cho bang ban nop co CSV task/meter."""
+    """Recompute two-sided p for submitted tables that have task/meter CSVs."""
     import pandas as pd
 
     out = {"tables": {}, "flips": []}
@@ -388,11 +388,11 @@ def recompute_from_csv_two_sided() -> dict:
 
 
 def recompute_rebuttal() -> dict:
-    """p hai phia cho so dung trong thu tra loi: R1.1, G3, G4, R2."""
+    """Two-sided p for the numbers used in the reply letter: R1.1, G3, G4, R2."""
     flips = []
     out = {}
 
-    # --- R1.1 gchung: mot phia (greater: naive-model > 0) -> tinh lai hai phia
+    # --- R1.1 gchung: one-sided (greater: naive-model > 0) -> recompute two-sided
     r12 = json.load(open(os.path.join(ROOT, "results/r1-r2-cpu/summary.json")))
     r11_cells = []
     for cell in r12["r1_1_gchung"]["cells"]:
@@ -462,7 +462,7 @@ def recompute_rebuttal() -> dict:
                 flips.append(fr)
     out["r1_1_g4_joint"] = r11_g4
 
-    # --- G3: da hai phia trong so_g3_voi_moc; van ghi p_two va doi chieu
+    # --- G3: already two-sided in so_g3_voi_moc; still record p_two and cross-check
     g3 = json.load(open(os.path.join(ROOT, "results/g3-so-moc/summary.json")))
     g3_out = {}
     for key, label_one in (
@@ -500,7 +500,7 @@ def recompute_rebuttal() -> dict:
             flips.append({**fr, "note": "G3 source was already two-sided; flip is one-vs-two hypothetically"})
     out["g3"] = g3_out
 
-    # --- G4: tong_g4 da two-sided; tinh them one-sided de danh dau flip gia dinh
+    # --- G4: tong_g4 is already two-sided; also compute one-sided to flag hypothetical flips
     g4 = json.load(open(os.path.join(ROOT, "results/g4-tong/summary.json")))
     g4_rows = []
     for key, cmp in g4["pool_vs_local"].items():

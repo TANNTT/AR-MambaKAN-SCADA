@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# G4: rolling-origin F2 and F3 (PA-3 bỏ F1).
+# G4: rolling-origin F2 and F3 (fold F1 dropped).
 # F2 test 2022-01-01..2022-04-30; F3 test 2022-05-01..2022-08-31.
 # Train = data before val; val = last 1/8 of pre-test (val/train≈1/7).
 # BiLSTM + AR-MambaKAN, readout last, pooled + local, h48 + h336, seeds 42/43/44.

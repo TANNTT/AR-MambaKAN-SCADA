@@ -1,6 +1,6 @@
 """Fetch real historical weather (Open-Meteo ERA5 archive) per station.
 
-Run this ONCE from a terminal that has internet access (the Cursor sandbox cannot reach the
+Run this ONCE from a terminal that has internet access (a sandboxed environment cannot reach the
 network). It reads station coordinates from a CSV and writes one weather CSV per station to
 `--out-dir`, with the canonical `wx_*` columns expected by `scada_exp.features`.
 

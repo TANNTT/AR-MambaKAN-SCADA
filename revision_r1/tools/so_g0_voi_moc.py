@@ -1,9 +1,9 @@
-"""So G0 (readout=last, h48, seed 42) voi CSV moc cua ban nop. ARIS viet 2026-11-21.
+"""Compare G0 (readout=last, h48, seed 42) with the reference CSV of the submitted version. Written 2026-11-21.
 
-Moc: pooled_multihorizon_results.csv (bilstm pooled), armambakan_stemfix_{pooled,local}.csv,
+Reference: pooled_multihorizon_results.csv (bilstm pooled), armambakan_stemfix_{pooled,local}.csv,
 pq_split_{local,pooled}.csv (mae_p, mae_q). Joint MAE = (mae_p + mae_q)/2.
-Dao dong seed = khoang max-min giua seed 42, 43, 44 cua cung task trong CSV moc.
-Ra: results/g0-so-moc/summary.json
+Seed spread = max-min range across seeds 42, 43, 44 of the same task in the reference CSV.
+Output: results/g0-so-moc/summary.json
 """
 import csv, json, statistics, pathlib, sys
 
@@ -109,7 +109,7 @@ for (model, regime, src) in moc:
         "so_meter_trong_dao_dong": sum(r["trong_dao_dong"] for r in rs),
     }
 
-# Commit cua tung run G0 (doc tu summary.json cua run)
+# Commit of each G0 run (read from the run's summary.json)
 g0_commits = {}
 for p in sorted(G.glob("*/summary.json")):
     s = json.load(open(p))

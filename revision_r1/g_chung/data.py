@@ -145,7 +145,7 @@ def resolve_meter_index(
     return out
 
 
-# Rolling-origin folds for G4 (PA-3 bỏ F1). Inclusive calendar dates (UTC-naive local).
+# Rolling-origin folds for G4 (fold F1 dropped). Inclusive calendar dates (UTC-naive local).
 ROLLING_FOLDS: dict[str, tuple[str, str]] = {
     "F2": ("2022-01-01", "2022-04-30"),
     "F3": ("2022-05-01", "2022-08-31"),

@@ -1,6 +1,6 @@
-"""Tong hop G4 (goc truot F2/F3, 264 lan). Chi doc results/g4/*/summary.json.
+"""Summary of G4 (rolling origin F2/F3, 264 runs). Reads results/g4/*/summary.json only.
 
-Ghi results/g4-tong/summary.json. CPU.
+Writes results/g4-tong/summary.json. CPU.
 """
 from __future__ import annotations
 
@@ -201,8 +201,8 @@ def main() -> None:
                                 A, B, meters, a_name="armambakan", b_name="bilstm"
                             )
 
-        # So cua so hoc / kiem dinh / kiem moi cong to moi fold
-        # Lay tu seed 42 (cua so khong phu thuoc seed trong thiet ke)
+        # Number of train / validation / test windows per meter per fold
+        # Taken from seed 42 (window counts do not depend on the seed by design)
         for model in MODELS:
             for regime in REGIMES:
                 for ro in readouts_present:

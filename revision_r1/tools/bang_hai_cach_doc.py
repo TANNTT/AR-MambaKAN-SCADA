@@ -1,8 +1,8 @@
-"""PA-B: bang so hai cach doc (last vs full) tu results/g-chung.
+"""Two-readout table (last vs full) from results/g-chung.
 
-Chi doc results/g-chung/*/summary.json. Ghi results/bang-hai-cach-doc/.
-Cung cach tinh mean 10 cong to (trung binh 3 seed) nhu tong_g_chung.py.
-Wilcoxon ghep theo cong to, HAI PHIA. CPU.
+Reads results/g-chung/*/summary.json only. Writes results/bang-hai-cach-doc/.
+Same computation as tong_g_chung.py: mean over 10 meters (mean of 3 seeds).
+Wilcoxon paired by meter, TWO-SIDED. CPU.
 """
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ METRICS = ("mae_joint", "mae_p", "mae_q")
 METRIC_TAG = {"mae_joint": "joint", "mae_p": "p", "mae_q": "q"}
 MODEL_LABEL = {"bilstm": "BiLSTM", "armambakan": "AR-MambaKAN"}
 
-# So ban nop (OMML tu _Nga.docx): Table 3 aggregate 40 task, Table 4/17 theo horizon.
+# Submitted-version values (OMML from _Nga.docx): Table 3 aggregate over 40 tasks, Tables 4/17 by horizon.
 BAN_NOP_T3 = {
     "bilstm": {"local": 677.2, "pooled": 574.0, "pct": -15.2, "tasks_improved": "32/40", "p": 3.7e-4},
     "armambakan": {"local": 696.9, "pooled": 579.2, "pct": -16.9, "tasks_improved": "35/40", "p": 8.1e-7},
@@ -56,7 +56,7 @@ BAN_NOP_T5 = {
     },
 }
 BAN_NOP_T17 = {
-    # joint MAE theo horizon (seed-mean roi mean 10 tram)
+    # joint MAE by horizon (seed mean, then mean over 10 stations)
     ("daily_naive", 4): 391.6,
     ("daily_naive", 48): 390.5,
     ("daily_naive", 96): 484.0,
@@ -269,7 +269,7 @@ def main() -> None:
 
                 rows.append(row)
 
-    # Cac khoa Wilcoxon phang de verify_numbers.py do
+    # Flat Wilcoxon keys for verify_numbers.py to read
     tests_a = {}
     tests_b = {}
     tests_c = {}
@@ -334,7 +334,7 @@ def main() -> None:
                     "wilcoxon_p_two_sided": cmp_ab["wilcoxon_p_two_sided"],
                 }
 
-    # So last G-chung voi ban nop Table 3, 4, 5, 17
+    # Compare G-chung last with the submitted Tables 3, 4, 5, 17
     lech_ban_nop = {"table3": [], "table4": [], "table5": [], "table17": [], "note": (
         "Table 3/5 ban nop = trung binh 40 task (10 tram x 4 horizon), seed-mean roi gop. "
         "G-chung so day la mean 4 horizon cua mean 10 tram (last). "
@@ -372,7 +372,7 @@ def main() -> None:
             g_l = cell_means[f"{model}|local|last|{h}|joint"]
             pct = 100.0 * (g_p / g_l - 1.0)
             bn = BAN_NOP_T4[(model, h)]
-            # Ban nop Table 4 khong in MAE thô, chi pct: doi chieu pct va p
+            # Submitted Table 4 does not print raw MAE, only pct: compare pct and p
             lech_ban_nop["table4"].append(
                 {
                     "model": model,

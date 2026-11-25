@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# G0: chạy thử h48 seed 42, 2 mô hình x 2 cách đọc, pooled (10 công tơ) + local M01, M02.
-# Mục đích: đo giờ thật, kiểm tái lập readout=last với CSV mốc, kiểm npz. ARIS viết 2026-11-21 theo lenh-hang-doi-de-xuat.sh của Cursor.
+# G0: trial run h48 seed 42, 2 models x 2 readouts, pooled (10 meters) + local M01, M02.
+# Purpose: measure real runtime, check that readout=last reproduces the reference CSV, and check the npz outputs. Written 2026-11-21 following the proposed queue-command script.
 set -euo pipefail
 PAPER="${SCADA_PAPER_ROOT:?Set SCADA_PAPER_ROOT to the revision_r1 directory}"
 PY="${SCADA_PYTHON:?Set SCADA_PYTHON to the project Python interpreter}"

@@ -1,7 +1,7 @@
-"""Tong hop G-chung (528 lan): pooled/local x last/full x 4 horizon x 3 seed.
+"""Summary of G-chung (528 runs): pooled/local x last/full x 4 horizons x 3 seeds.
 
-Chi doc results/g-chung/*/summary.json (fold/ablation/target_meter deu null).
-Ghi results/g-chung-tong/summary.json. CPU.
+Reads results/g-chung/*/summary.json only (fold/ablation/target_meter all null).
+Writes results/g-chung-tong/summary.json. CPU.
 """
 from __future__ import annotations
 
@@ -24,12 +24,12 @@ HORIZONS = [4, 48, 96, 336]
 METRICS = ("mae_joint", "mae_p", "mae_q")
 METRIC_TAG = {"mae_joint": "joint", "mae_p": "p", "mae_q": "q"}
 
-# G0 moc (mean 10 tram, last h48 seed 42, pooled)
+# G0 reference (mean over 10 stations, last, h48, seed 42, pooled)
 G0_LAST_H48_S42 = {
     "bilstm": 484.079,
     "armambakan": 473.438,
 }
-G0_TOL = 0.5  # so voi so in trong yeu cau (3 chu so thap phan)
+G0_TOL = 0.5  # versus the figure printed in the request (3 decimal places)
 
 
 def is_null(v) -> bool:

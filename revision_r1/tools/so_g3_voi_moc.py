@@ -1,14 +1,14 @@
-"""So G3 (target_frac) voi moc gop chia deu cung ngan sach. Chi doc, CPU.
+"""Compare G3 (target_frac) with the equal-split matched-budget reference. Read-only, CPU.
 
-Moc uu tien (doc theo thu tu, lay file dau tien ton tai):
-  1) results/matched_budget_armambakan.csv (trong thu muc bai)
+Reference preference (read in order, take the first file that exists):
+  1) results/matched_budget_armambakan.csv (in the paper directory)
   2) $SCADA_PUBLIC_REPO/results/matched_budget_armambakan.csv
-     (ban nop run_matched_budget.py, chi doc)
+     (submitted version run_matched_budget.py, read-only)
 
-Loc horizon=48, mae theo tram (code M01..M10), trung binh 3 seed.
-G3: doc results/g3/*/summary.json, mae_joint tram dich, trung binh 3 seed theo p.
-Wilcoxon ghep cap theo tram (mean 3 seed): p0.5 vs p0.75, p0.25 vs p0.5.
-Ra: results/g3-so-moc/summary.json
+Filter horizon=48, MAE by station (codes M01..M10), mean over 3 seeds.
+G3: read results/g3/*/summary.json, target-station mae_joint, mean over 3 seeds by p.
+Paired Wilcoxon by station (3-seed mean): p0.5 vs p0.75, p0.25 vs p0.5.
+Output: results/g3-so-moc/summary.json
 """
 from __future__ import annotations
 
@@ -231,7 +231,7 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     json.dump(out, open(out_dir / "summary.json", "w"), indent=2, ensure_ascii=False)
 
-    # Console report (ARIS / Cursor bao cao)
+    # Console report
     print(
         "G3 so moc: n_g3=%d / %d, moc=%s"
         % (

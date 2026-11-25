@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Xuat bang in + hinh R2 / hai cach doc tu ket qua CPU da co (PA-B).
+"""Export print tables and R2 / two-readout figures from existing CPU results (option B).
 
-Gia dinh:
-1. Nguon so chi doc: results/bang-hai-cach-doc, r1-r2-cpu, p-hai-phia (khong sua).
-2. Bang chinh R2 dung readout last (PA-B). Moi p la Wilcoxon HAI PHIA ghep theo cong to.
-3. MAE in 1 chu so thap phan, MAPE 2, p 3 chu so co nghia; moi o giu raw_* song song.
-4. Cong to hinh (a): M01 = cong to dau trong xep hang chat luong (MAIN_METERS) co du 3 ngay dai dien.
-5. Kho hinh: IET/Wiley 1 cot = 84 mm (cung tri Springer cot=1 trong kieu-trinh-bay).
-6. MAPE nguong 5% |y|_mean da chot o phan_tich_r1_r2_cpu; khong doi.
+Assumptions:
+1. Source numbers are read-only: results/bang-hai-cach-doc, r1-r2-cpu, p-hai-phia (not modified).
+2. The main R2 table uses readout last (option B). Every p is a TWO-SIDED Wilcoxon paired by meter.
+3. MAE printed with 1 decimal, MAPE with 2, p with 3 significant digits; each cell keeps the raw_* values alongside.
+4. Figure (a) meter: M01 = first meter in the quality ranking (MAIN_METERS) that has the 3 representative days.
+5. Figure size: IET/Wiley single column = 84 mm (same as Springer column=1 in kieu-trinh-bay).
+6. MAPE threshold 5% |y|_mean fixed in phan_tich_r1_r2_cpu; unchanged.
 """
 from __future__ import annotations
 

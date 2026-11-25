@@ -1,5 +1,5 @@
-"""Tong hop G2b (ablation, readout=full) so voi component_ablation_summary.csv (readout=last, ban nop).
-Ghi results/g2b-tong/summary.json. Chi doc, CPU.
+"""Summary of G2b (ablation, readout=full) against component_ablation_summary.csv (readout=last, submitted version).
+Writes results/g2b-tong/summary.json. Read-only, CPU.
 """
 import csv
 import glob
